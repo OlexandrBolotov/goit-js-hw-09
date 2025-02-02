@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Домашнее задание 9</title>
+    <title>Feedback Form</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,15 +13,16 @@
     />
   </head>
   <body>
-    <div class="container">
-      <h1>Домашнє завдання 9</h1>
+    <form class="feedback-form" autocomplete="off">
+      <div class="feedback-cont">
+        <label> Email </label>
+        <input type="email" name="email" autofocus />
+        <label> Message </label>
+        <textarea name="message" rows="8"></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
 
-      <a class="task-link" href="1-gallery.html"
-        >Завдання 1 - Галерея зображень</a
-      >
-      <a class="task-link" href="2-form.html"
-        >Завдання 2 - Форма зворотного зв'язку</a
-      >
-    </div>
+    <script src="js/2-form.js" type="module"></script>
   </body>
 </html>
